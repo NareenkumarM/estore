@@ -18,6 +18,6 @@ jobs:
           DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
           DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
         run: |
-          docker build -t your-dockerhub-username/angular-admin-app .
+          docker build -t nareenkumar/angular-admin-app .
           docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
-          docker push your-dockerhub-username/angular-admin-app
+          docker push nareenkumar/angular-admin-app
